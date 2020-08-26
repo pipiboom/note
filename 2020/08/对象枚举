@@ -1,0 +1,7 @@
+in和hasOwnProperty(..)的区别在于是否查找[[Prototype]]链
+Object.keys(..) 和Object.getOwnPropertyNames(..)都只会查找对象直接包含的属性
+
+for in 查询对象内部和原型链上面的   可枚举属性
+hasOwnProperty 查询对象内部     可枚举属性
+Object.keys   查询对象内部      可枚举属性
+Object.getOwnPropertyNames  查询对象内部   所有属性
